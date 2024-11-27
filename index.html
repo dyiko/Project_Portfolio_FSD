@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- nav/header section -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href=""><img src="./images/AG_logo1.png" class="logo" /></a>
+
+          <div class="menu-icon" id="menu-icon">
+            &#x22EE;
+            <!-- Three dot icon -->
+          </div>
+          <div class="close-icon" id="close-icon" style="display: none">
+            &times;
+            <!-- Cross icon -->
+          </div>
+          <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>Website Development,Data Analytics & Cloud technologies</p>
+          <h1>Hi, I'm <span>Ayushman</span><br />Gautam</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/resume.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="pp1">
+              With a strong passion for technology and a drive to succeed, I
+              bring a unique combination of skills to the table. My ability to
+              adapt quickly to new environments and approaches, along with my
+              advanced knowledge of web development.Makes me a valuable asset to
+              any team. I am eager to join an organization where I can apply my
+              skills, be challenged, and make a meaningful impact.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+              <p class="tab-links" onclick="opentab('Experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>FRONTEND DEVELOPMENT</span><br />
+                  HTML / CSS, Bootstrap, JavaScript, ReactJs
+                </li>
+                <li>
+                  <span>BACKEND DEVELOPMENT</span><br />Node.js, MySQL,
+                  MongoDB,Express.js
+                </li>
+                <li>
+                  <span>ADDITIONAL SKILLS</span><br />Python & Java
+                  basics,GitHub, Middleware,SQL, Data Structures & Algorithms,
+                  System design basics, IOT and Cloud theoretical concepts.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>NOV 2024- Current</span><br />Freelance</li>
+                <li>
+                  Developed a responsive and visually appealing website for a
+                  client, successfully meeting requirements and achieving a
+                  satisfaction rating of 8.5/10.
+                </li>
+                <li>
+                  Consulted with the client to gather requirements and designed
+                  a responsive layout using modern front-end technologies.
+                </li>
+                <li>
+                  <span>APRIL 2024- MAY 2024</span><br />Training at Kfintech
+                  Technology
+                </li>
+                <li>
+                  Developed proficiency in SQL databases, change data capture
+                  (CDC), distributed databases, data structures, AWS services,
+                  React, and Node.js through rigorous training and practical
+                  application
+                </li>
+
+                <!-- <li><span></span><br /></li> -->
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>KIIT University (2020 - 2024)</span><br />
+                  B-Tech - Information technology
+                  <br />Bhubaneswar, India <br />8.75 CGPA
+                </li>
+                <li>
+                  <span>KENDRIYA VIDYALAYA SANGATHAN</span><br />10th & 12th
+                </li>
+                <!-- <li><span>MERN PROJECT</span><br />React Development</li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <p class="pp1">
+          <span>WHAT I DO</span> <br />
+          I offer a comprehensive range of website design and development
+          services, including custom web development solutions, responsive
+          website designs, and the creation of tailored e-commerce platforms.
+          Using the latest and most reliable web technologies, I deliver
+          seamless, high performance digital experiences for my clients.
+        </p>
+        <div class="services-list">
+          <div class="service">
+            <div class="image-slider" id="slider1">
+              <img src="./images/services/DT_1.png" alt="Web Design" />
+              <img src="./images/services/DT_2.png" alt="Web Design" />
+              <img src="./images/services/DT_3.png" alt="Web Design" />
+            </div>
+            <span class="icons"><i class="fas fa-laptop-code"></i></span>
+            <h2>Frontend Development</h2>
+            <p>HTML / CSS, Bootstrap, JavaScript, ReactJs</p>
+
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div class="service">
+            <div class="image-slider" id="slider2">
+              <img src="./images/services/parsa_3.jpeg" alt="App Design" />
+              <img src="./images/services/parsa_1.jpeg" alt="App Design" />
+              <img src="./images/services/parsa_2.jpeg" alt="App Design" />
+            </div>
+            <span class="icons"><i class="fas fa-server"></i></span>
+            <h2>Backend Development</h2>
+            <p>Node.js, MySQL, MongoDB,Express.js</p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+          <div class="service">
+            <div class="image-slider" id="slider3">
+              <img src="./images/services/dtp1.png" alt="UI/UX Design" />
+              <img src="./images/services/dtp2.png" alt="UI/UX Design" />
+              <img src="./images/services/dtp3.png" alt="UI/UX Design" />
+            </div>
+            <span class="icons"><i class="fas fa-tools"></i></span>
+            <h2>Additional Skills</h2>
+            <p>
+              Python & Java basics,GitHub, Middleware,SQL, Data Structures &
+              Algorithms, System design basics, IOT and Cloud theoretical
+              concepts.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Portfolio</h1>
+        <p class="pp11"><span>SEE MY WORKS </span></p>
+        <div class="work-list">
+          <div class="work">
+            <img src="./images/DT_1.png" alt="" />
+            <div class="layer">
+              <h3>Freelance Project</h3>
+              <p class="pp2">
+                I deliver efficient, timely, and optimized code using modern web
+                development best practices.
+              </p>
+              <a href="https://github.com/dyiko">Learn More</a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/services/parsa_3.jpeg" alt="" />
+            <div class="layer">
+              <h3>E-commerce Project</h3>
+              <p class="pp2">
+                Developed dynamic React web app, enhancing performance,
+                scalability, and user experience.
+              </p>
+              <a href="https://github.com/dyiko/React_PAARSA-_Food_Ordering"
+                >Learn More</a
+              >
+            </div>
+          </div>
+          <div class="work">
+            <img src="./images/services/gold_p.png" alt="" />
+            <div class="layer">
+              <h3>
+                Data Analytics <br />
+                <h5>Gold price prediction</h5>
+              </h3>
+              <p class="pp2">
+                Developed price forecasting model using machine learning;
+                documented methodology, findings, and recommendations.
+              </p>
+              <a href="https://github.com/dyiko">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div id="hiddenContent" style="display: none">
+          <!-- Hidden content goes here -->
+          <!-- <div class="work">
+            <img src="./images/services/DT_1.png" alt="" />
+            <div class="layer">
+              <h3>New Hidden Project</h3>
+              <p class="pp2">
+                Details about the new hidden project which is revealed on
+                clicking "See More".
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+          </div> -->
+        </div>
+        <a href="javascript:void(0);" class="btn" id="toggleButton">See More</a>
+      </div>
+    </div>
+
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fas fa-envelope"></i
+              ><a href="mailto:testfile007@email.com"></a>
+              learntoearndev@gmail.com
+            </p>
+            <p><i class="fas fa-phone"></i> +91 7310929995</p>
+            <div class="social-icons">
+              <a
+                href="https://www.instagram.com/dynamic___things/profilecard/?igsh=MXIwN2N5MXRlOWp5ZQ=="
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i> Instagram
+              </a>
+              <a href="https://github.com/dyiko" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ayushmangautam1007/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </a>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1z8ZsS7qbxyDf-UroC3hf8U2FKRiZxXHC/view?usp=sharing"
+              download
+              class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>Copyright <span>&copy;</span> 2024 <b>AYUSHMAN GAUTAM</b></p>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
